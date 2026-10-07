@@ -1,1 +1,281 @@
-IyDwn6e+IEludm9TY2FuIEFJIOKAlCBFbmQtdG8tRW5kIEdTVCBJbnZvaWNlIEludGVsbGlnZW5jZSBTeXN0ZW0KCj4gKipIYWNrdG9iZXIgRmVzdCA0IHwgT3BlbiBTb3VyY2UgQUkgSGFja2F0aG9uIHwgT3JnYW5pemVkIGJ5IEVsZXZhdGUqKiAgCj4gKipQcm9ibGVtIFN0YXRlbWVudCAzIOKAlCBWWU9NKyBHU1QgSW52b2ljZSBJbnRlbGxpZ2VuY2UqKgoKLS0tCgojIyDwn5OMIFByb2JsZW0gU3RhdGVtZW50CgpCdXNpbmVzc2VzIGluIEluZGlhIGRlYWwgd2l0aCBHU1QgaW52b2ljZXMgYWNyb3NzIGEgd2lkZSB2YXJpZXR5IG9mIGZvcm1hdHMg4oCUIHByaW50ZWQgUERGcywgc2Nhbm5lZCBpbWFnZXMsIGhhbmR3cml0dGVuIGRvY3VtZW50cywgRXhjZWwgc2hlZXRzLCBhbmQgQ1NWcy4gTWFudWFsbHkgZXh0cmFjdGluZywgdmFsaWRhdGluZywgYW5kIHN0cnVjdHVyaW5nIHRoaXMgZGF0YSBpcyBlcnJvci1wcm9uZSwgdGltZS1jb25zdW1pbmcsIGFuZCBkaWZmaWN1bHQgdG8gc2NhbGUuCgoqKlZZT00rKiogbmVlZHMgYSBjb21wbGV0ZSBpbnZvaWNlIGludGVsbGlnZW5jZSBwaXBlbGluZSB0aGF0OgotIEFjY2VwdHMgZGl2ZXJzZSBpbnB1dCBmb3JtYXRzIChgLnhsc3hgLCBgLmNzdmAsIGAucGRmYCwgYC5qcGVnYCwgYC5qcGdgLCBgLnBuZ2ApCi0gQXV0b21hdGljYWxseSBpZGVudGlmaWVzIHRoZSBkb2N1bWVudCB0eXBlIGFuZCByb3V0ZXMgaXQgdGhyb3VnaCB0aGUgcmlnaHQgcHJvY2Vzc2luZyBwaXBlbGluZQotIEV4dHJhY3RzIGFsbCByZWxldmFudCBHU1QsIHRheCwgZmluYW5jaWFsLCBhbmQgbGluZS1pdGVtIGluZm9ybWF0aW9uCi0gVmFsaWRhdGVzIGFuZCBzdGFuZGFyZGl6ZXMgdGhlIG91dHB1dCBpbnRvIG1hY2hpbmUtcmVhZGFibGUgc3RydWN0dXJlZCByZWNvcmRzIChKU09OICsgdGFidWxhcikKCi0tLQoKIyMg8J+OryBUYXJnZXQgVXNlcnMKCnwgVXNlciB8IFBhaW4gUG9pbnQgU29sdmVkIHwKfC0tLXwtLS18CnwgKipTbWFsbCAmIE1lZGl1bSBCdXNpbmVzc2VzIChTTUJzKSoqIHwgTm8gZGVkaWNhdGVkIGFjY291bnRhbnQ7IG5lZWQgYXV0b21hdGVkIEdTVCByZWNvcmQgY3JlYXRpb24gfAp8ICoqQ0EgRmlybXMgJiBUYXggQ29uc3VsdGFudHMqKiB8IEhhbmRsZSBodW5kcmVkcyBvZiBpbnZvaWNlcyBwZXIgY2xpZW50OyBtYW51YWwgZXh0cmFjdGlvbiB3YXN0ZXMgaG91cnMgfAp8ICoqRVJQIC8gQWNjb3VudGluZyBQbGF0Zm9ybXMgKGxpa2UgVllPTSspKiogfCBOZWVkIHN0cnVjdHVyZWQgZGF0YSBmcm9tIHJhdyBkb2N1bWVudHMgdG8gZmVlZCBkb3duc3RyZWFtIHdvcmtmbG93cyB8CnwgKipHU1QgQXVkaXRvcnMqKiB8IFJlcXVpcmUgdmFsaWRhdGVkLCBjb25zaXN0ZW50IGRhdGEgYWNyb3NzIG11bHRpcGxlIGludm9pY2Ugc291cmNlcyB8CgotLS0KCiMjIPCfkqEgUHJvcG9zZWQgU29sdXRpb24KCldlIHByb3Bvc2UgKipJbnZvU2NhbiBBSSoqIOKAlCBhIG1vZHVsYXIsIEFJLXBvd2VyZWQgZG9jdW1lbnQgaW50ZWxsaWdlbmNlIHBpcGVsaW5lIHRoYXQgaW5nZXN0cyByYXcgaW52b2ljZSBkb2N1bWVudHMgYW5kIG91dHB1dHMgdmFsaWRhdGVkLCBzdHJ1Y3R1cmVkIGZpbmFuY2lhbCByZWNvcmRzLgoKVGhlIHN5c3RlbSBpcyBkaXZpZGVkIGludG8gdGhyZWUgbGF5ZXJzOgoxLiAqKklucHV0IFJvdXRlcioqIOKAlCBkZXRlY3RzIGZpbGUgdHlwZSBhbmQgZGlyZWN0cyB0byB0aGUgcmlnaHQgc3ViLXBpcGVsaW5lCjIuICoqQUkgRXh0cmFjdGlvbiBDb3JlKiog4oCUIHVzZXMgYSBWaXNpb24tTGFuZ3VhZ2UgTW9kZWwgKFZMTSkgYW5kIE9DUiBmb3IgdW5zdHJ1Y3R1cmVkIGlucHV0cywgYW5kIHBhbmRhcy1iYXNlZCBwYXJzaW5nIGZvciBzdHJ1Y3R1cmVkIGlucHV0cwozLiAqKlZhbGlkYXRpb24gJiBPdXRwdXQgRW5naW5lKiog4oCUIHZhbGlkYXRlcyBHU1QgbnVtYmVycywgaW52b2ljZSB0b3RhbHMsIHRheCBjYWxjdWxhdGlvbnMsIGFuZCBleHBvcnRzIGNsZWFuIEpTT04gKyB0YWJ1bGFyIGRhdGEKCi0tLQoKIyMg8J+kliBTZWxlY3RlZCBPcGVuLVNvdXJjZSBBSSBUZWNobm9sb2d5CgojIyMgUHJpbWFyeSBNb2RlbDogW1F3ZW4yLjUtVkxdKGh0dHBzOi8vaHVnZ2luZ2ZhY2UuY28vUXdlbi9Rd2VuMi41LVZMLTdCLUluc3RydWN0KSAoVmlzaW9uLUxhbmd1YWdlIE1vZGVsKQoKKipXaHkgUXdlbjIuNS1WTD8qKgotIFN0YXRlLW9mLXRoZS1hcnQgb3Blbi1zb3VyY2UgVkxNIHdpdGggZXhjZXB0aW9uYWwgZG9jdW1lbnQgdW5kZXJzdGFuZGluZyBjYXBhYmlsaXRpZXMKLSBIYW5kbGVzIGJvdGggcHJpbnRlZCBhbmQgKipoYW5kd3JpdHRlbioqIHRleHQgaW4gaW1hZ2VzL1BERnMg4oCUIHdoaWNoIGlzIHRoZSBjb3JlIHRlY2huaWNhbCBjaGFsbGVuZ2Ugb2YgdGhpcyBwcm9ibGVtCi0gU3VwcG9ydHMgbXVsdGktcGFnZSBkb2N1bWVudHMgYW5kIGNvbXBsZXggdGFibGUgbGF5b3V0cyBuYXRpdmVseQotIENhbiBiZSBydW4gbG9jYWxseSB2aWEgYHRyYW5zZm9ybWVyc2AgKyBgYml0c2FuZGJ5dGVzYCAoNC1iaXQgcXVhbnRpemVkKSBvbiBhIHNpbmdsZSBHUFUKLSBPcGVubHkgbGljZW5zZWQgKEFwYWNoZSAyLjApIOKAlCBmdWxseSBjb21wbGlhbnQgd2l0aCB0aGUgb3Blbi1zb3VyY2UgcmVxdWlyZW1lbnQKCioqU3VwcG9ydGluZyBUb29sczoqKgotIFtQYWRkbGVPQ1JdKGh0dHBzOi8vZ2l0aHViLmNvbS9QYWRkbGVQYWRkbGUvUGFkZGxlT0NSKSDigJQgZm9yIGhpZ2gtYWNjdXJhY3kgT0NSIHByZS1wcm9jZXNzaW5nIG9uIHNjYW5uZWQgaW1hZ2VzCi0gW3BkZnBsdW1iZXJdKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3ZpbmUvcGRmcGx1bWJlcikg4oCUIGZvciBleHRyYWN0aW5nIHRleHQgYW5kIHRhYmxlcyBmcm9tIGRpZ2l0YWxseSBnZW5lcmF0ZWQgUERGcwotIFtwYW5kYXNdKGh0dHBzOi8vcGFuZGFzLnB5ZGF0YS5vcmcvKSDigJQgZm9yIHN0cnVjdHVyZWQgYC54bHN4YCAvIGAuY3N2YCBwcm9jZXNzaW5nCi0gW0Zhc3RBUEldKGh0dHBzOi8vZmFzdGFwaS50aWFuZ29sby5jb20vKSDigJQgbGlnaHR3ZWlnaHQgYmFja2VuZCBmb3IgdGhlIHVwbG9hZCBpbnRlcmZhY2UKCi0tLQoKIyMg8J+noCBBSSdzIFJvbGUgaW4gdGhlIFN5c3RlbQoKVGhlIEFJIChRd2VuMi41LVZMKSBpcyB0aGUgKipjb3JlIGludGVsbGlnZW5jZSBsYXllcioqLCBub3QgYW4gb3B0aW9uYWwgY29tcG9uZW50OgoKLSBGb3IgKipQREZzIGFuZCBpbWFnZXMqKiwgdGhlIFZMTSByZWNlaXZlcyB0aGUgZG9jdW1lbnQgcGFnZSBhcyBhbiBpbWFnZSBhbmQgYSBzdHJ1Y3R1cmVkIHByb21wdCByZXF1ZXN0aW5nIHNwZWNpZmljIEdTVCBmaWVsZHMuIEl0IG91dHB1dHMgYSBKU09OIHJlc3BvbnNlIHdpdGggZXh0cmFjdGVkIHZhbHVlcy4KLSBUaGUgbW9kZWwgaXMgc3BlY2lmaWNhbGx5IHByb21wdGVkIHRvIGhhbmRsZSAqKmhhbmR3cml0dGVuIGludm9pY2VzKiog4oCUIGlkZW50aWZ5aW5nIGFtb3VudHMsIEdTVElOIG51bWJlcnMsIEhTTiBjb2RlcywgYW5kIGxpbmUgaXRlbXMgZXZlbiB1bmRlciBwb29yIHNjYW4gcXVhbGl0eS4KLSAqKk5vIHByb3ByaWV0YXJ5IEFQSSBpcyB1c2VkKiog4oCUIGluZmVyZW5jZSBydW5zIGVudGlyZWx5IGxvY2FsbHkgb3Igb24gYSBzZWxmLWhvc3RlZCBzZXJ2ZXIuCgo+IFRoZSBtb2RlbCBpcyBpbnRlZ3JhbCB0byB0aGUgc3lzdGVtJ3MgYWJpbGl0eSB0byBoYW5kbGUgcmVhbC13b3JsZCwgbWVzc3kgaW52b2ljZSBkb2N1bWVudHMgdGhhdCBydWxlLWJhc2VkIE9DUiBhbG9uZSBjYW5ub3QgcmVsaWFibHkgcGFyc2UuCgotLS0KCiMjIPCfj5fvuI8gQXJjaGl0ZWN0dXJlCgpgYGAK4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQCuKUgiAgICAgICAgICAgICAgICAgICAgICAgIFVTRVIgSU5URVJGQUNFICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgICAgICAgKEZhc3RBUEkgKyBTaW1wbGUgSFRNTCBVcGxvYWQgUG9ydGFsKSAgICAgICAgICAgICAg4pSCCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogICAgICAgICAgICAgICAgICAgICAgICAgICDilIIgVXBsb2FkIERvY3VtZW50CiAgICAgICAgICAgICAgICAgICAgICAgICAgIOKWvArilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICAgICAgICAgICAgICAgICAgICAgSU5QVVQgUk9VVEVSICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgRGV0ZWN0czogLnhsc3ggLyAuY3N2IC8gLnBkZiAvIC5qcGcgLyAucG5nICAgICAgICAgICAgIOKUggrilJTilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKICAgICDilIIgICAgICAgICAgICAgIOKUgiAgICAgICAgICAgICAgICAgICAgICDilIIKICAgICDilrwgICAgICAgICAgICAgIOKWvCAgICAgICAgICAgICAgICAgICAgICDilrwK4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCIHBhbmRhcyAg4pSCICDilIIgIHBkZnBsdW1iZXIgICAg4pSCICAg4pSCICAgUGFkZGxlT0NSICAgICAgICDilIIK4pSCIFBhcnNlciAg4pSCICDilIIgIChEaWdpdGFsIFBERikgICAg4pSCICAgICAgKEltYWdlL1NjYW5uZWQgUERGKeKUggogICAgICAgICAgKElEPXBhcnNlcikgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIArilJTilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKICAgICDilIIgICAgICAgICAgICAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSs4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCiAgICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgICDilIIgICAgICAgICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAKICAgICDilIIgICAgICAgICAgICAgICDilIIgICBRd2VuMi41LVZMICg3QikgICDilIIKICAgICDilIIgICAgICAgICAgICAgICDilIIgIFZpc2lvbi1MYW5ndWFnZSAgICAg4pSCCiAgICAg4pSCICAgICAgICAgICAgICAg4pSCICBNb2RlbCDigJQgRXh0cmFjdGlvbiAg4pSCCiAgICAg4pSCICAgICAgICAgICAgICAg4pSCICArIFVuZGVyc3RhbmRpbmcgICAgIOKUggogICAgIOKUgiAgICAgICAgICAgICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogICAgIOKUgiAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCiAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pa8CiAgICAgICAgICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAKICAgICAgICAgICAgICAgIOKUgiAgIFZBTElEQVRJT04gRU5HSU5FICAgICAgICDilIIKICAgICAgICAgICAgICAgIOKUgiAg4oCiIEdTVElOIGZvcm1hdCBjaGVjayAgICAgIOKUggogICAgICAgICAgICAgICAg4pSCICDigKIgVGF4IGNhbGN1bGF0aW9uIHZlcmlmeSAg4pSCCiAgICAgICAgICAgICAgICDilIIgIOKAoiBNaXNzaW5nIGZpZWxkIGZsYWdnaW5nICDilIIKICAgICAgICAgICAgICAgIOKUgiAg4oCiIER1cGxpY2F0ZSBkZXRlY3Rpb24gICAgIOKUggogICAgICAgICAgICAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSs4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgICAgICAgICAgICAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQCiAgICAgICAgICAgICAgIOKUgiAgICAgICAgT1VUUFVUIExBWUVSICAgICAgICAgICDilIIKICAgICAgICAgICAgICAg4pSCICDigKIgSlNPTiAobWFjaGluZS1yZWFkYWJsZSkgICAg4pSCCiAgICAgICAgICAgICAgIOKUgiAg4oCiIFN0cnVjdHVyZWQgdGFidWxhciAoQ1NWKSAgIOKUggogICAgICAgICAgICAgICDilIIgIOKAoiBDb25maWRlbmNlIHNjb3JlcyAgICAgICAgICDilIIKICAgICAgICAgICAgICAg4pSCICDigKIgRmxhZ2dlZC91bmNlcnRhaW4gZmllbGRzICAg4pSCCiAgICAgICAgICAgICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmApgYGAKCi0tLQoKIyMg8J+UhCBEYXRhIEZsb3cKCmBgYAoxLiBVc2VyIHVwbG9hZHMgZG9jdW1lbnQgdmlhIHdlYiBpbnRlcmZhY2UKMi4gSW5wdXQgUm91dGVyIGlkZW50aWZpZXMgZmlsZSB0eXBlCjNhLiBbRXhjZWwvQ1NWXSAgICAgICDihpIgcGFuZGFzIG5vcm1hbGl6ZXMgY29sdW1ucyDihpIgVmFsaWRhdGlvbiBFbmdpbmUKM2IuIFtEaWdpdGFsIFBERl0gICAgIOKGkiBwZGZwbHVtYmVyIGV4dHJhY3RzIHRleHQvdGFibGVzIOKGkiBRd2VuMi41LVZMIGZpZWxkIG1hcHBpbmcg4oaSIFZhbGlkYXRpb24gRW5naW5lCjNjLiBbSW1hZ2UvU2Nhbm5lZF0gICDihpIgUGFkZGxlT0NSIHByZS1wcm9jZXNzZXMg4oaSIFF3ZW4yLjUtVkwgdmlzaW9uIGV4dHJhY3Rpb24g4oaSIFZhbGlkYXRpb24gRW5naW5lCjQuIFZhbGlkYXRpb24gRW5naW5lIGNoZWNrcyBHU1RJTiwgdG90YWxzLCB0YXggY29uc2lzdGVuY3ksIGZsYWdzIGFub21hbGllcwo1LiBPdXRwdXQgRW5naW5lIHJldHVybnMgc3RydWN0dXJlZCBKU09OICsgdGFidWxhciBDU1Ygd2l0aCBjb25maWRlbmNlIG1ldGFkYXRhCmBgYAoKLS0tCgojIyDwn5eC77iPIEZpZWxkcyBFeHRyYWN0ZWQKCnwgQ2F0ZWdvcnkgfCBGaWVsZHMgfAp8LS0tfC0tLXwKfCAqKkludm9pY2UgTWV0YWRhdGEqKiB8IEludm9pY2UgTnVtYmVyLCBEYXRlLCBQbGFjZSBvZiBTdXBwbHkgfAp8ICoqU2VsbGVyIC8gU3VwcGxpZXIqKiB8IE5hbWUsIEFkZHJlc3MsIEdTVElOLCBQQU4gfAp8ICoqQnV5ZXIgLyBDdXN0b21lcioqIHwgTmFtZSwgQWRkcmVzcywgR1NUSU4gfAp8ICoqTGluZSBJdGVtcyoqIHwgRGVzY3JpcHRpb24sIEhTTi9TQUMgQ29kZSwgUXVhbnRpdHksIFVuaXQgUHJpY2UsIFRvdGFsIHwKfCAqKlRheCBEZXRhaWxzKiogfCBDR1NULCBTR1NULCBJR1NULCBDZXNzLCBUYXhhYmxlIFZhbHVlIHwKfCAqKkZpbmFuY2lhbHMqKiB8IFN1YnRvdGFsLCBEaXNjb3VudCwgRnJlaWdodCwgR3JhbmQgVG90YWwsIEN1cnJlbmN5IHwKfCAqKlBheW1lbnQgSW5mbyoqIHwgUGF5bWVudCBNb2RlLCBCYW5rIERldGFpbHMsIER1ZSBEYXRlIHwKCi0tLQoKIyMg8J+TpiBUZWNobm9sb2d5IFN0YWNrCgp8IExheWVyIHwgVGVjaG5vbG9neSB8CnwtLS18LS0tfAp8ICoqQUkgLyBWTE0qKiB8IFF3ZW4yLjUtVkwtN0ItSW5zdHJ1Y3QgKEFwYWNoZSAyLjApIHwKfCAqKk9DUioqIHwgUGFkZGxlT0NSIChBcGFjaGUgMi4wKSB8CnwgKipQREYgUGFyc2luZyoqIHwgcGRmcGx1bWJlciB8CnwgKipTdHJ1Y3R1cmVkIERhdGEqKiB8IHBhbmRhcywgb3BlbnB5eGwgfAp8ICoqUXVhbnRpemF0aW9uKiogfCBiaXRzYW5kYnl0ZXMgKDQtYml0IC8gOC1iaXQpIHwKfCAqKkJhY2tlbmQgQVBJKiogfCBGYXN0QVBJICsgVXZpY29ybiB8CnwgKipGcm9udGVuZCoqIHwgSFRNTCArIFZhbmlsbGEgSlMgKHVwbG9hZCBwb3J0YWwpIHwKfCAqKk91dHB1dCBGb3JtYXRzKiogfCBKU09OLCBDU1YgfAp8ICoqUnVudGltZSoqIHwgUHl0aG9uIDMuMTArIHwKCi0tLQoKIyMg8J+Xk++4jyBJbXBsZW1lbnRhdGlvbiBQbGFuCgp8IFBoYXNlIHwgRHVyYXRpb24gfCBUYXNrcyB8CnwtLS18LS0tfC0tLXwKfCAqKlBoYXNlIDEg4oCUIFNldHVwKiogfCBEYXkgMSB8IEVudmlyb25tZW50IHNldHVwLCBtb2RlbCBkb3dubG9hZCwgcGlwZWxpbmUgc2NhZmZvbGRpbmcgfAp8ICoqUGhhc2UgMiDigJQgU3RydWN0dXJlZCBQaXBlbGluZSoqIHwgRGF5IDIgfCBFeGNlbC9DU1YgcGFyc2VyICsgdmFsaWRhdGlvbiBlbmdpbmUgfAp8ICoqUGhhc2UgMyDigJQgVkxNIEludGVncmF0aW9uKiogfCBEYXkgM+KAkzQgfCBRd2VuMi41LVZMIGludGVncmF0aW9uLCBwcm9tcHQgZW5naW5lZXJpbmcgZm9yIEdTVCBleHRyYWN0aW9uIHwKfCAqKlBoYXNlIDQg4oCUIE9DUiBQaXBlbGluZSoqIHwgRGF5IDUgfCBQYWRkbGVPQ1IgcHJlcHJvY2Vzc2luZyArIGhhbmR3cml0dGVuIGludm9pY2UgdGVzdGluZyB8CnwgKipQaGFzZSA1IOKAlCBWYWxpZGF0aW9uIEVuZ2luZSoqIHwgRGF5IDYgfCBHU1RJTiByZWdleCBjaGVja3MsIHRheCBtYXRoIHZhbGlkYXRpb24sIGFub21hbHkgZmxhZ2dpbmcgfAp8ICoqUGhhc2UgNiDigJQgVUkgKyBPdXRwdXQqKiB8IERheSA3IHwgRmFzdEFQSSBlbmRwb2ludHMsIHVwbG9hZCBwb3J0YWwsIEpTT04vQ1NWIGV4cG9ydCB8CnwgKipQaGFzZSA3IOKAlCBUZXN0aW5nKiogfCBEYXkgOCB8IEVuZC10by1lbmQgdGVzdHMgYWNyb3NzIGFsbCBpbnB1dCB0eXBlcywgZWRnZSBjYXNlIGhhbmRsaW5nIHwKCi0tLQoKIyMg8J+TpCBFeHBlY3RlZCBPdXRwdXQKCmBgYGpzb24KewogICJpbnZvaWNlX251bWJlciI6ICJJTlYtMjAyNS0wMDc4MiIsCiAgImludm9pY2VfZGF0ZSI6ICIyMDI1LTAzLTE1IiwKICAic2VsbGVyIjogewogICAgIm5hbWUiOiAiU2hhcm1hIFRyYWRlcnMgUHZ0LiBMdGQuIiwKICAgICJnc3RpbiI6ICIyN0FBQkNTMTQyOUIxWkIiLAogICAgImFkZHJlc3MiOiAiMTIzLCBNRyBSb2FkLCBQdW5lLCBNYWhhcmFzaHRyYSAtIDQxMTAwMSIKICB9LAogICJidXllciI6IHsKICAgICJuYW1lIjogIlJhdmkgRW50ZXJwcmlzZXMiLAogICAgImdzdGluIjogIjI5QUFCQ1IxMjM0QzFaNSIsCiAgICAiYWRkcmVzcyI6ICI0NSwgQnJpZ2FkZSBSb2FkLCBCZW5nYWx1cnUsIEthcm5hdGFrYSAtIDU2MDAwMSIKICB9LAogICJsaW5lX2l0ZW1zIjogWwogICAgewogICAgICAiZGVzY3JpcHRpb24iOiAiT2ZmaWNlIENoYWlyIiwKICAgICAgImhzbl9jb2RlIjogIjk0MDEiLAogICAgICAicXVhbnRpdHkiOiAxMCwKICAgICAgInVuaXRfcHJpY2UiOiAyNTAwLjAwLAogICAgICAidG90YWwiOiAyNTAwMC4wMAogICAgfQogIF0sCiAgInRheCI6IHsKICAgICJjZ3N0IjogMjI1MC4wMCwKICAgICJzZ3N0IjogMjI1MC4wMCwKICAgICJpZ3N0IjogMC4wMCwKICAgICJ0b3RhbF90YXgiOiA0NTAwLjAwCiAgfSwKICAiZ3JhbmRfdG90YWwiOiAyOTUwMC4wMCwKICAiY3VycmVuY3kiOiAiSU5SIiwKICAidmFsaWRhdGlvbiI6IHsKICAgICJnc3Rpbl92YWxpZCI6IHRydWUsCiAgICAidGF4X2NhbGN1bGF0aW9uX21hdGNoIjogdHJ1ZSwKICAgICJmbGFnZ2VkX2ZpZWxkcyI6IFtdCiAgfSwKICAiY29uZmlkZW5jZV9zY29yZSI6IDAuOTQsCiAgInNvdXJjZV90eXBlIjogInNjYW5uZWRfaW1hZ2UiCn0KYGBgCgotLS0KCiMjIPCfk4ggU2NhbGFiaWxpdHkgJiBGdXR1cmUgU2NvcGUKCi0gKipCYXRjaCBQcm9jZXNzaW5nKio6IEFjY2VwdCBaSVAgYXJjaGl2ZXMgb2YgbXVsdGlwbGUgaW52b2ljZXMgYW5kIHByb2Nlc3MgaW4gcGFyYWxsZWwgdXNpbmcgUHl0aG9uIGBtdWx0aXByb2Nlc3NpbmdgCi0gKipNb2RlbCBGaW5lLXR1bmluZyoqOiBGaW5lLXR1bmUgUXdlbjIuNS1WTCBvbiBhIEdTVC1zcGVjaWZpYyBkYXRhc2V0IHVzaW5nIFFMb1JBIGZvciBoaWdoZXIgZG9tYWluIGFjY3VyYWN5Ci0gKipNdWx0aS1sYW5ndWFnZSBTdXBwb3J0Kio6IFBhZGRsZU9DUiBzdXBwb3J0cyBIaW5kaS9yZWdpb25hbCBsYW5ndWFnZSBpbnZvaWNlcyDigJQgY2FuIGJlIGVuYWJsZWQgZm9yIFRpZXItMi8zIG1hcmtldHMKLSAqKlZZT00rIEFQSSBJbnRlZ3JhdGlvbioqOiBPdXRwdXQgSlNPTiBpcyBkZXNpZ25lZCB0byBiZSBkaXJlY3RseSBpbmdlc3RpYmxlIGludG8gVllPTSsncyB2b3VjaGVyIGNyZWF0aW9uIHdvcmtmbG93Ci0gKipDbG91ZCBEZXBsb3ltZW50Kio6IENvbnRhaW5lcml6ZSB3aXRoIERvY2tlcjsgZGVwbG95IG9uIGFueSBHUFUtZW5hYmxlZCBjbG91ZCAoR0NQLCBBV1MsIEF6dXJlKQoKLS0tCgojIyDimqDvuI8gRXhwZWN0ZWQgQ2hhbGxlbmdlcwoKfCBDaGFsbGVuZ2UgfCBNaXRpZ2F0aW9uIFN0cmF0ZWd5IHwKfC0tLXwtLS18CnwgKipIYW5kd3JpdHRlbiBpbnZvaWNlIHF1YWxpdHkqKiB8IFBhZGRsZU9DUiBwcmUtcHJvY2Vzc2luZyArIFZMTSdzIHZpc2lvbiBjYXBhYmlsaXRpZXMgZm9yIGxheW91dCB1bmRlcnN0YW5kaW5nIHwKfCAqKlZhcmlhYmxlIGludm9pY2UgZm9ybWF0cyoqIHwgUHJvbXB0IGVuZ2luZWVyaW5nIHdpdGggZmV3LXNob3QgZXhhbXBsZXMgYWNyb3NzIGludm9pY2UgdHlwZXMgfAp8ICoqR1NUSU4gLyBIU04gY29kZSBhY2N1cmFjeSoqIHwgUG9zdC1leHRyYWN0aW9uIHJlZ2V4ICsgY2hlY2tzdW0gdmFsaWRhdGlvbiB8CnwgKipNb2RlbCBpbmZlcmVuY2Ugc3BlZWQqKiB8IDQtYml0IHF1YW50aXphdGlvbiB2aWEgYml0c2FuZGJ5dGVzOyBiYXRjaCBpbmZlcmVuY2Ugd2hlcmUgcG9zc2libGUgfAp8ICoqTWlzc2luZyBvciBhbWJpZ3VvdXMgZmllbGRzKiogfCBFeHBsaWNpdCBjb25maWRlbmNlIHNjb3JpbmcgKyBmbGFnZ2luZyB1bmNlcnRhaW4gZXh0cmFjdGlvbnMgfAp8ICoqTXVsdGktcGFnZSBQREZzKiogfCBQYWdlLWJ5LXBhZ2UgcHJvY2Vzc2luZyB3aXRoIGNvbnRleHQgYWdncmVnYXRpb24gfAoKLS0tCgojIyDwn5OmIERlcGVuZGVuY2llcwoKYGBgCnRyYW5zZm9ybWVycz49NC40MC4wCnF3ZW4tdmwtdXRpbHMKcGFkZGxlcGFkZGxlCnBhZGRsZW9jcgpwZGZwbHVtYmVyCnBhbmRhcwpvcGVucHl4bApmYXN0YXBpCnV2aWNvcm4KYml0c2FuZGJ5dGVzCnBpbGxvdwp0b3JjaD49Mi4wLjAKYGBgCgotLS0KCiMjIPCfkaUgVGVhbQoKPiBIYWNrdG9iZXIgRmVzdCA0IOKAlCBQcm9ibGVtIFN0YXRlbWVudCAzICAKPiAqKlZZT00rIEVuZC10by1FbmQgQUktUG93ZXJlZCBHU1QgSW52b2ljZSBJbnRlbGxpZ2VuY2UgU3lzdGVtKioKCi0tLQoKIyMg8J+ThCBMaWNlbnNlCgpUaGlzIHByb2plY3QgaXMgb3Blbi1zb3VyY2UgYW5kIHdpbGwgYmUgcmVsZWFzZWQgdW5kZXIgdGhlICoqTUlUIExpY2Vuc2UqKi4KCi0tLQoKPiAqQnVpbHQgd2l0aCDinaTvuI8gZm9yIEhhY2t0b2JlciBGZXN0IDQg4oCUIE9wZW4gU291cmNlIEFJIEhhY2thdGhvbioK
+# 🧾 InvoScan AI — End-to-End GST Invoice Intelligence System
+
+> **Hacktober Fest 4 | Open Source AI Hackathon | Organized by Elevate**  
+> **Problem Statement 3 — VYOM+ GST Invoice Intelligence**
+
+---
+
+## 📌 Problem Statement
+
+Businesses in India deal with GST invoices across a wide variety of formats — printed PDFs, scanned images, handwritten documents, Excel sheets, and CSVs. Manually extracting, validating, and structuring this data is error-prone, time-consuming, and difficult to scale.
+
+**VYOM+** needs a complete invoice intelligence pipeline that:
+- Accepts diverse input formats (`.xlsx`, `.csv`, `.pdf`, `.jpeg`, `.jpg`, `.png`)
+- Automatically identifies the document type and routes it through the right processing pipeline
+- Extracts all relevant GST, tax, financial, and line-item information
+- Validates and standardizes the output into machine-readable structured records (JSON + tabular)
+
+---
+
+## 🎯 Target Users
+
+| User | Pain Point Solved |
+|---|---|
+| **Small & Medium Businesses (SMBs)** | No dedicated accountant; need automated GST record creation |
+| **CA Firms & Tax Consultants** | Handle hundreds of invoices per client; manual extraction wastes hours |
+| **ERP / Accounting Platforms (like VYOM+)** | Need structured data from raw documents to feed downstream workflows |
+| **GST Auditors** | Require validated, consistent data across multiple invoice sources |
+
+---
+
+## 💡 Proposed Solution
+
+We propose **InvoScan AI** — a modular, AI-powered document intelligence pipeline that ingests raw invoice documents and outputs validated, structured financial records.
+
+The system is divided into three layers:
+1. **Input Router** — detects file type and directs to the right sub-pipeline
+2. **AI Extraction Core** — uses a Vision-Language Model (VLM) and OCR for unstructured inputs, and pandas-based parsing for structured inputs
+3. **Validation & Output Engine** — validates GST numbers, invoice totals, tax calculations, and exports clean JSON + tabular data
+
+---
+
+## 🤖 Selected Open-Source AI Technology
+
+### Primary Model: [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) (Vision-Language Model)
+
+**Why Qwen2.5-VL?**
+- State-of-the-art open-source VLM with exceptional document understanding capabilities
+- Handles both printed and **handwritten** text in images/PDFs — which is the core technical challenge of this problem
+- Supports multi-page documents and complex table layouts natively
+- Can be run locally via `transformers` + `bitsandbytes` (4-bit quantized) on a single GPU
+- Openly licensed (Apache 2.0) — fully compliant with the open-source requirement
+
+**Supporting Tools:**
+- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) — for high-accuracy OCR pre-processing on scanned images
+- [pdfplumber](https://github.com/jsvine/pdfplumber) — for extracting text and tables from digitally generated PDFs
+- [pandas](https://pandas.pydata.org/) — for structured `.xlsx` / `.csv` processing
+- [FastAPI](https://fastapi.tiangolo.com/) — lightweight backend for the upload interface
+
+---
+
+## 🧠 AI's Role in the System
+
+The AI (Qwen2.5-VL) is the **core intelligence layer**, not an optional component:
+
+- For **PDFs and images**, the VLM receives the document page as an image and a structured prompt requesting specific GST fields. It outputs a JSON response with extracted values.
+- The model is specifically prompted to handle **handwritten invoices** — identifying amounts, GSTIN numbers, HSN codes, and line items even under poor scan quality.
+- **No proprietary API is used** — inference runs entirely locally or on a self-hosted server.
+
+> The model is integral to the system's ability to handle real-world, messy invoice documents that rule-based OCR alone cannot reliably parse.
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        USER INTERFACE                           │
+│              (FastAPI + Simple HTML Upload Portal)              │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │ Upload Document
+                           ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     INPUT ROUTER                                │
+│         Detects: .xlsx / .csv / .pdf / .jpg / .png             │
+└────┬──────────────┬──────────────────────┬──────────────────────┘
+     │              │                      │
+     ▼              ▼                      ▼
+┌─────────┐  ┌────────────────┐   ┌────────────────────┐
+│ pandas  │  │  pdfplumber    │   │   PaddleOCR        │
+│ Parser  │  │  (Digital PDF) │   │ (Image/Scanned PDF)│
+│.xlsx/.csv│  └───────┬────────┘   └────────┬───────────┘
+└────┬────┘          │                      │
+     │               └──────────┬───────────┘
+     │                          ▼
+     │               ┌─────────────────────┐
+     │               │   Qwen2.5-VL (7B)   │
+     │               │  Vision-Language     │
+     │               │  Model — Extraction  │
+     │               │  + Understanding     │
+     │               └──────────┬──────────┘
+     │                          │
+     └──────────────────────────┤
+                                ▼
+                ┌───────────────────────────┐
+                │   VALIDATION ENGINE        │
+                │  • GSTIN format check      │
+                │  • Tax calculation verify  │
+                │  • Missing field flagging  │
+                │  • Duplicate detection     │
+                └──────────────┬────────────┘
+                               ▼
+               ┌───────────────────────────────┐
+               │        OUTPUT LAYER           │
+               │  • JSON (machine-readable)    │
+               │  • Structured tabular (CSV)   │
+               │  • Confidence scores          │
+               │  • Flagged/uncertain fields   │
+               └───────────────────────────────┘
+```
+
+---
+
+## 🔄 Data Flow
+
+```
+1. User uploads document via web interface
+2. Input Router identifies file type
+3a. [Excel/CSV]       → pandas normalizes columns → Validation Engine
+3b. [Digital PDF]     → pdfplumber extracts text/tables → Qwen2.5-VL field mapping → Validation Engine
+3c. [Image/Scanned]   → PaddleOCR pre-processes → Qwen2.5-VL vision extraction → Validation Engine
+4. Validation Engine checks GSTIN, totals, tax consistency, flags anomalies
+5. Output Engine returns structured JSON + tabular CSV with confidence metadata
+```
+
+---
+
+## 🗂️ Fields Extracted
+
+| Category | Fields |
+|---|---|
+| **Invoice Metadata** | Invoice Number, Date, Place of Supply |
+| **Seller / Supplier** | Name, Address, GSTIN, PAN |
+| **Buyer / Customer** | Name, Address, GSTIN |
+| **Line Items** | Description, HSN/SAC Code, Quantity, Unit Price, Total |
+| **Tax Details** | CGST, SGST, IGST, Cess, Taxable Value |
+| **Financials** | Subtotal, Discount, Freight, Grand Total, Currency |
+| **Payment Info** | Payment Mode, Bank Details, Due Date |
+
+---
+
+## 📦 Technology Stack
+
+| Layer | Technology |
+|---|---|
+| **AI / VLM** | Qwen2.5-VL-7B-Instruct (Apache 2.0) |
+| **OCR** | PaddleOCR (Apache 2.0) |
+| **PDF Parsing** | pdfplumber |
+| **Structured Data** | pandas, openpyxl |
+| **Quantization** | bitsandbytes (4-bit / 8-bit) |
+| **Backend API** | FastAPI + Uvicorn |
+| **Frontend** | HTML + Vanilla JS (upload portal) |
+| **Output Formats** | JSON, CSV |
+| **Runtime** | Python 3.10+ |
+
+---
+
+## 🗓️ Implementation Plan
+
+| Phase | Duration | Tasks |
+|---|---|---|
+| **Phase 1 — Setup** | Day 1 | Environment setup, model download, pipeline scaffolding |
+| **Phase 2 — Structured Pipeline** | Day 2 | Excel/CSV parser + validation engine |
+| **Phase 3 — VLM Integration** | Day 3–4 | Qwen2.5-VL integration, prompt engineering for GST extraction |
+| **Phase 4 — OCR Pipeline** | Day 5 | PaddleOCR preprocessing + handwritten invoice testing |
+| **Phase 5 — Validation Engine** | Day 6 | GSTIN regex checks, tax math validation, anomaly flagging |
+| **Phase 6 — UI + Output** | Day 7 | FastAPI endpoints, upload portal, JSON/CSV export |
+| **Phase 7 — Testing** | Day 8 | End-to-end tests across all input types, edge case handling |
+
+---
+
+## 📤 Expected Output
+
+```json
+{
+  "invoice_number": "INV-2025-00782",
+  "invoice_date": "2025-03-15",
+  "seller": {
+    "name": "Sharma Traders Pvt. Ltd.",
+    "gstin": "27AABCS1429B1ZB",
+    "address": "123, MG Road, Pune, Maharashtra - 411001"
+  },
+  "buyer": {
+    "name": "Ravi Enterprises",
+    "gstin": "29AABCR1234C1Z5",
+    "address": "45, Brigade Road, Bengaluru, Karnataka - 560001"
+  },
+  "line_items": [
+    {
+      "description": "Office Chair",
+      "hsn_code": "9401",
+      "quantity": 10,
+      "unit_price": 2500.00,
+      "total": 25000.00
+    }
+  ],
+  "tax": {
+    "cgst": 2250.00,
+    "sgst": 2250.00,
+    "igst": 0.00,
+    "total_tax": 4500.00
+  },
+  "grand_total": 29500.00,
+  "currency": "INR",
+  "validation": {
+    "gstin_valid": true,
+    "tax_calculation_match": true,
+    "flagged_fields": []
+  },
+  "confidence_score": 0.94,
+  "source_type": "scanned_image"
+}
+```
+
+---
+
+## 📈 Scalability & Future Scope
+
+- **Batch Processing**: Accept ZIP archives of multiple invoices and process in parallel using Python `multiprocessing`
+- **Model Fine-tuning**: Fine-tune Qwen2.5-VL on a GST-specific dataset using QLoRA for higher domain accuracy
+- **Multi-language Support**: PaddleOCR supports Hindi/regional language invoices — can be enabled for Tier-2/3 markets
+- **VYOM+ API Integration**: Output JSON is designed to be directly ingestible into VYOM+'s voucher creation workflow
+- **Cloud Deployment**: Containerize with Docker; deploy on any GPU-enabled cloud (GCP, AWS, Azure)
+
+---
+
+## ⚠️ Expected Challenges
+
+| Challenge | Mitigation Strategy |
+|---|---|
+| **Handwritten invoice quality** | PaddleOCR pre-processing + VLM's vision capabilities for layout understanding |
+| **Variable invoice formats** | Prompt engineering with few-shot examples across invoice types |
+| **GSTIN / HSN code accuracy** | Post-extraction regex + checksum validation |
+| **Model inference speed** | 4-bit quantization via bitsandbytes; batch inference where possible |
+| **Missing or ambiguous fields** | Explicit confidence scoring + flagging uncertain extractions |
+| **Multi-page PDFs** | Page-by-page processing with context aggregation |
+
+---
+
+## 📦 Dependencies
+
+```
+transformers>=4.40.0
+qwen-vl-utils
+paddlepaddle
+paddleocr
+pdfplumber
+pandas
+openpyxl
+fastapi
+uvicorn
+bitsandbytes
+pillow
+torch>=2.0.0
+```
+
+---
+
+## 👥 Team
+
+> Hacktober Fest 4 — Problem Statement 3  
+> **VYOM+ End-to-End AI-Powered GST Invoice Intelligence System**
+
+---
+
+## 📄 License
+
+This project is open-source and will be released under the **MIT License**.
+
+---
+
+> *Built with ❤️ for Hacktober Fest 4 — Open Source AI Hackathon*
